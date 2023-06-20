@@ -9,6 +9,7 @@ public class Entity1
     public Guid Id { get; set; }
     public string Name { get; set; }
     public int Age { get; set; }
+    public bool IsTrue { get; set; }
 }
 
 public class Entity2
@@ -120,6 +121,14 @@ public class Entity13
 }
 
 public class Entity14
+{
+    [Key]
+    public Guid Id { get; set; }
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+
+public class Entity15
 {
     [Key]
     public Guid Id { get; set; }

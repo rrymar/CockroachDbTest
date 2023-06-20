@@ -22,3 +22,10 @@ Replace connection string
  Run console app
  
  To add new migrations run  `dotnet ef migrations add name`
+ 
+
+## Results 
+- Migrations execution time x seconds
+- Can have more 10 ddl operations in one transaction
+- Can't insert data in new columns when columns added in same transaction
+- https://github.com/cockroachdb/cockroach/issues/31463

@@ -18,6 +18,7 @@ public class DataContext : DbContext
     public DbSet<Entity12> Entities12 { get; set; }
     public DbSet<Entity13> Entities13 { get; set; }
     public DbSet<Entity14> Entities14 { get; set; }
+    public DbSet<Entity15> Entities15 { get; set; }
     
     public DataContext()
     {
