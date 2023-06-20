@@ -9,6 +9,11 @@ namespace CockroachDbTest.App.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.InsertData(
+                table: "Entities1",
+                columns: new[] { "Id", "Name", "Age" },
+                values: new object[] { Guid.NewGuid(), "Ferrari", 40});
+            
             migrationBuilder.CreateTable(
                 name: "Entities10",
                 columns: table => new
@@ -22,6 +27,11 @@ namespace CockroachDbTest.App.Migrations
                     table.PrimaryKey("PK_Entities10", x => x.Id);
                 });
 
+            migrationBuilder.InsertData(
+                table: "Entities1",
+                columns: new[] { "Id", "Name", "Age" },
+                values: new object[] { Guid.NewGuid(), "Ferrari2", 43});
+            
             migrationBuilder.CreateTable(
                 name: "Entities13",
                 columns: table => new
