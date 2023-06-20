@@ -31,6 +31,6 @@ public class DataContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseNpgsql(
-            "Host=poc-test-8457.8nj.cockroachlabs.cloud;Port=26257;Database=defaultdb3;Username=ruslan;Password=I5FwVjKWBfxYv1Ms4Uhpdg");
+            "Host=poc-test-8457.8nj.cockroachlabs.cloud;Port=26257;Database=defaultdb;Username=ruslan;Password=your pass here");
     }
 }
