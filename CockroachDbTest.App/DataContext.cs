@@ -21,7 +21,6 @@ public class DataContext : DbContext
     
     public DataContext()
     {
-        Database.EnsureCreated();
     }
 
     public void Migrate()
@@ -32,6 +31,6 @@ public class DataContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseNpgsql(
-            "Host=poc-test-8457.8nj.cockroachlabs.cloud;Port=26257;Database=defaultdb;Username=ruslan;Password=yourpasshere");
+            "Host=poc-test-8457.8nj.cockroachlabs.cloud;Port=26257;Database=defaultdb3;Username=ruslan;Password=I5FwVjKWBfxYv1Ms4Uhpdg");
     }
 }
